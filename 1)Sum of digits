@@ -1,0 +1,17 @@
+https://www.geeksforgeeks.org/problems/sum-of-digits1742/1
+
+
+static int sumOfDigits(int N) {
+        // code here
+        int sum = 0;
+        for (int i=N ; N>0 ;N=N/10){
+            sum = sum + N%10;
+            
+            
+        }
+        return sum;
+    }
+}
+
+
+       
