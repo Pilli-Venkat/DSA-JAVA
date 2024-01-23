@@ -1,0 +1,29 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      int[] arr = {1,12,122,3,123};
+      
+      int first_min = Integer.MAX_VALUE;
+      int second_min = Integer.MAX_VALUE;
+      
+      
+      for (int x : arr){
+        
+        if (x < first_min){
+          second_min = first_min;
+          first_min = x;
+        }
+        
+        if ( x != first_min && x < second_min){
+          
+          second_min = x;
+        }
+        
+        
+        
+      }
+      System.out.println("first_min "+ first_min);
+       System.out.println("second min "+ second_min);
+  }
+}
