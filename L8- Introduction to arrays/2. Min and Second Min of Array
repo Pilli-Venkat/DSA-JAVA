@@ -1,0 +1,55 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      int[] arr ={1,23,21,9,6};
+      
+      // This is the array
+      
+      System.out.println(Arrays.toString(arr));
+      
+      int first_min = Integer.MAX_VALUE;
+      System.out.println(first_min);
+      
+      for(int x : arr){
+        if (x < first_min){
+          first_min = x;
+        }
+        
+      }
+      System.out.println("First Minimum Element: " + first_min);
+      
+      int secondMin = Integer.MAX_VALUE;
+      
+      for(int x : arr){
+        if ( x == first_min){
+          continue; // Here first_min is already consider
+          // So, we need to see other than first_min value in the array
+        }
+        if (x< secondMin) {
+          
+          secondMin = x;
+          
+          
+        }
+      }
+       System.out.println("Second Minimum Element: " + secondMin);
+       
+       int thirdMin = Integer.MAX_VALUE;
+       
+       for (int x : arr){
+         
+         if (x == first_min) continue;
+         if (x == secondMin) continue;
+         if (x < thirdMin) thirdMin = x;
+         
+        
+         
+         
+         
+         
+         
+       }
+        System.out.println("Third Minimum Element: " + thirdMin);
+  }
+}
