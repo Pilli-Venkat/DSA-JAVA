@@ -1,0 +1,21 @@
+// https://codeforces.com/problemset/submit?csrf_token=8b3b1b9632c0f1a37aa5b51e64c809fa
+
+class Main{
+    public static void main(String[] args){
+        //System.out.println("Hellow");
+		String s = "Hello world";
+		int result = s.compareTo("Hello");
+		//System.out.println(result);
+		if (result < 0){
+			System.out.println("-1");
+
+		}
+		if (result > 0 ){
+			System.out.println("1");
+		}
+		else{
+			System.out.println("0");
+		}
+    }
+
+}
